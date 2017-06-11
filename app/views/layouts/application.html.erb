@@ -2,13 +2,8 @@
 <html>
   <head>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-
-
-
-
   </head>
 
 
@@ -19,12 +14,10 @@
   <div id="narrow">
       <div class="tutorial">
         <ul>
-         <a href="welcome#index">  <li>Home</li></a>
-
-          <a href="/articles/">  <li>Games</li></a>
-
-              <li>Blog</li>
-                <li>About</li>
+         <a href="/articles/show">  <li>Home</li></a>
+            <a href="/characters/index">  <li>Characters</li></a>
+              <a href="/blogs/index/"> <li>Developer blog</li></a>
+                <li>About Beyond Canvas</li>
 
           <!-- <li>Games <i class="fa fa-angle-down"></i>
             <ul>

@@ -1,9 +1,11 @@
 
 Rails.application.routes.draw do
-  get 'welcome/index'
+  get 'articles/index'
 
 resources :articles, only: [:index, :new, :show]
+resources :characters, only: [:index, :new, :show]
+resources :blogs, only: [:index, :new, :show]
 
 
-  root 'welcome#index'
+  root 'articles#index'
 end
