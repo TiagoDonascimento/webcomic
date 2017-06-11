@@ -1,6 +1,13 @@
 
 Rails.application.routes.draw do
-  get 'welcome/index'
+  get 'articles/index'
+  get 'articles/about'
+  get 'articles/contact'
 
-  root 'welcome#index'
+resources :articles, only: [:index, :new, :show]
+resources :characters, only: [:index, :new, :show]
+resources :blogs, only: [:index, :new, :show]
+
+
+  root 'articles#index'
 end
